@@ -36,7 +36,6 @@ header p {
 main section {
     padding: 0 0.2em;
     width: 100vw;
-    height: 100vh;
 }
 
 main h2:first-of-type {
@@ -73,7 +72,6 @@ main section:first-of-type article:first-of-type {
 
 main section:first-of-type article:last-of-type {
     width: 100vw;
-    height: 100vh;
     padding: 0 10em;
 }
 
@@ -87,12 +85,12 @@ main section:first-of-type ul {
     height: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 2%
 }
 
 main section:first-of-type ul li {
-    padding: 10px;
+    padding: 100px;
     background-color: black;
 }
 
@@ -127,4 +125,8 @@ main section:first-of-type ul:last-of-type {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 2%;
     margin-top: 20%;
+}
+
+footer {
+    height: 20vh;
 }
