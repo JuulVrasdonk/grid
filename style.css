@@ -1,0 +1,130 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, span, p, li, strong {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1, h2 {
+    font-weight: 700;
+    font-size: 10em;
+}
+
+header p {
+    width: 40%;
+    text-align: center;
+}
+
+
+
+/* *************
+      MAIN
+***************/
+
+main section {
+    padding: 0 0.2em;
+    width: 100vw;
+    height: 100vh;
+}
+
+main h2:first-of-type {
+    display: flex;
+    flex-direction: column;
+}
+
+main h2:first-of-type span {
+    text-align: left;
+}
+
+ main h2:first-of-type span:nth-of-type(2) {
+    text-align: right;
+}
+
+main section:first-of-type p {
+    width: 20em;
+    margin-left: 10px
+}
+
+/* *************
+  FLEXBOX PRO'S
+***************/
+
+main section:first-of-type article:first-of-type {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30% 0;
+}
+
+/* *************
+   GRID PRO'S
+***************/
+
+main section:first-of-type article:last-of-type {
+    width: 100vw;
+    height: 100vh;
+    padding: 0 10em;
+}
+
+/* *************
+   FIRST GRID 
+***************/
+
+main section:first-of-type ul {
+    list-style-type: none;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2%
+}
+
+main section:first-of-type ul li {
+    padding: 10px;
+    background-color: black;
+}
+
+main section:first-of-type ul:first-of-type li:nth-of-type(3) {
+    grid-row: span 2;
+    grid-column: span 2
+}
+
+main section:first-of-type ul:first-of-type li:nth-of-type() {
+    grid-row: span 2;
+}
+
+main section:first-of-type ul:first-of-type li:nth-of-type(4) {
+    grid-row: span 2;
+}
+
+main section:first-of-type ul:first-of-type li:nth-of-type(7) {
+    grid-column: span 2;
+}
+
+
+/* *************
+   SECOND GRID 
+***************/
+
+main section:first-of-type ul:last-of-type {
+    list-style-type: none;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2%;
+    margin-top: 20%;
+}
